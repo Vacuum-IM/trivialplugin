@@ -7,7 +7,7 @@
 #ifdef SVNINFO
 #  include "svninfo.h"
 #else
-#  define SVN_REVISION              "0:0"
+#  define SVN_REVISION              "0"
 #endif
 
 //MainWindow  - MainMenu
@@ -34,7 +34,7 @@ void TrivialPlugin::pluginInfo(IPluginInfo *APluginInfo)
 {
 	APluginInfo->name = tr("Trivial Plugin");
 	APluginInfo->description = tr("Example of Vacuum-IM extension plugin");
-	APluginInfo->version = "1.0." + (QString(SVN_REVISION).contains(':') ? QString(SVN_REVISION).split(':').value(1) : QString("0"));
+	APluginInfo->version = "1.0."SVN_REVISION;
 	APluginInfo->author = "Potapov S.A. aka Lion";
 	APluginInfo->homePage = "http://code.google.com/p/vacuum-plugins";
 	APluginInfo->dependences.append(MAINWINDOW_UUID);
