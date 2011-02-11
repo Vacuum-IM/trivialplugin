@@ -4,17 +4,6 @@
 #include <QMessageBox>
 #include <QApplication>
 
-#ifdef SVNINFO
-#  include "svninfo.h"
-#else
-#  define SVN_REVISION              "0"
-#endif
-
-//MainWindow  - MainMenu
-#define AG_MMENU_TRIVIALMESSAGE     950
-
-//MenuIcons
-#define MNI_TRIVIALPLUGIN_MESSAGE   "trivialpluginMessage"
 
 TrivialPlugin::TrivialPlugin()
 {
@@ -34,7 +23,7 @@ void TrivialPlugin::pluginInfo(IPluginInfo *APluginInfo)
 {
 	APluginInfo->name = tr("Trivial Plugin");
 	APluginInfo->description = tr("Example of Vacuum-IM extension plugin");
-	APluginInfo->version = "1.0."SVN_REVISION;
+	APluginInfo->version = "1.1.0";
 	APluginInfo->author = "Potapov S.A. aka Lion";
 	APluginInfo->homePage = "http://code.google.com/p/vacuum-plugins";
 	APluginInfo->dependences.append(MAINWINDOW_UUID);

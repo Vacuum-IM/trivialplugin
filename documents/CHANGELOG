@@ -1,7 +1,15 @@
 LEGEND
-------
+======
   [!] New plugin
   [+] New feature
   [*] Enhancement
   [-] Bug fix
 
+v1.1.0
+======
+[*] Fully changes build and install systems
+
+
+v1.0.0
+======
+[!] Initial version
