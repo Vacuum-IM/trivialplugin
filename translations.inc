@@ -1,8 +1,8 @@
-TRANS_LANGS  = ru_RU
+TRANS_LANGS  = ru
 
 FIRST_TARGET = $$member(TARGET,0)
 TRANSLATIONS = \
-	translations/ru_RU/$${FIRST_TARGET}.ts
+	translations/ru/$${FIRST_TARGET}.ts
 
 
 #Building Translations
