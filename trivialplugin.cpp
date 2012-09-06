@@ -9,8 +9,8 @@ TrivialPlugin::TrivialPlugin()
 {
 	FMainWindowPlugin = NULL;
 
-#ifdef RESOURCES_DIR
-	FileStorage::setResourcesDirs(FileStorage::resourcesDirs() << (QDir::isAbsolutePath(RESOURCES_DIR) ? RESOURCES_DIR : qApp->applicationDirPath()+"/"+RESOURCES_DIR));
+#ifdef DEBUG_RESOURCES_DIR
+	FileStorage::setResourcesDirs(FileStorage::resourcesDirs() << (QDir::isAbsolutePath(DEBUG_RESOURCES_DIR) ? DEBUG_RESOURCES_DIR : qApp->applicationDirPath()+"/"+DEBUG_RESOURCES_DIR));
 #endif
 }
 

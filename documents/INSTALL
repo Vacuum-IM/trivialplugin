@@ -1,12 +1,16 @@
-Notice
-======
-To build external plugin you should additionally specify two variables
-VACUUM_SRC_PATH - path to the Vacuum sources directory (vacuum/src)
-VACUUM_LIB_PATH - path to the Vacuum builded libraries directory (vacuum/src/libs)
+Configure
+=========
+You should use the same settings, as at vacuum build
+VACUUM_SDK_PATH - full path to vacuum SDK (for defaults look into qmake/config.inc or cmake/config.cmake)
 
+Unix example
+============
+qmake VACUUM_SDK_PATH="/usr/include/vacuum" CONFIG-=debug CONFIG-=debug_and_install
+make
+sudo make install
 
 Windows example
 ===============
-qmake -r VACUUM_SRC_PATH="../vacuum-src/src" VACUUM_LIB_PATH="../vacuum-build/src/libs"
-nmake release
+qmake VACUUM_SDK_PATH="c:/vacuum/sdk" CONFIG-=debug CONFIG-=debug_and_install
+nmake
 nmake install
