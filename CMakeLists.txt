@@ -9,10 +9,8 @@ set(MOC_HEADERS trivialplugin.h)
 
 include_directories("${CMAKE_SOURCE_DIR}")
 
-set(LOCALIZED_LANGS "ru;pl;de;uk")
-
 include("${CMAKE_SOURCE_DIR}/cmake/config.cmake")
-include("${CMAKE_SOURCE_DIR}/cmake/translations.cmake")
+include("${CMAKE_SOURCE_DIR}/translations/languages.cmake")
 include("${CMAKE_SOURCE_DIR}/cmake/plugin.cmake")
 
 install(DIRECTORY "resources/menuicons"

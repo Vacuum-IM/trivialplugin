@@ -1,20 +1,16 @@
-#Plugin file name
+include(qmake/config.inc)
+
+#Project configuration
 TARGET              = trivialplugin
-include(config.inc)
-
-#Project Configuration
-TEMPLATE            = lib
-CONFIG             += plugin
 QT                  = core gui
-LIBS               += -l$${TARGET_UTILS}
-LIBS               += -L$${VACUUM_LIB_PATH}
-DEPENDPATH         += $${VACUUM_SRC_PATH}
-INCLUDEPATH        += $${VACUUM_SRC_PATH}
+include(trivialplugin.pri)
 
-#Install
-include(install.inc)
+#Default progect configuration
+include(qmake/plugin.inc)
 
 #Translation
-include(translations.inc)
+TRANS_SOURCE_ROOT   = .
+include(translations/languages.inc)
 
-include(trivialplugin.pri)
+#Debug Features
+#include(qmake/debug.inc)
