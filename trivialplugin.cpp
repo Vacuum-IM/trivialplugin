@@ -23,7 +23,7 @@ void TrivialPlugin::pluginInfo(IPluginInfo *APluginInfo)
 {
 	APluginInfo->name = tr("Trivial Plugin");
 	APluginInfo->description = tr("Example of Vacuum-IM extension plugin");
-	APluginInfo->version = "1.1.0";
+	APluginInfo->version = "1.2.0";
 	APluginInfo->author = "Potapov S.A. aka Lion";
 	APluginInfo->homePage = "http://code.google.com/p/vacuum-plugins";
 	APluginInfo->dependences.append(MAINWINDOW_UUID);
