@@ -26,6 +26,7 @@ BUILD AND INSTALL
   ---------
   You should use the same settings, as at vacuum build
   VACUUM_SDK_PATH - full path to vacuum SDK (for defaults look into qmake/config.inc or cmake/config.cmake)
+  VACUUM_LIB_PATH - full path to vacuum Utils library
 
   Unix example
   ------------
