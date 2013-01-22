@@ -1,7 +1,7 @@
 #ifndef TRIVIALPLUGIN_H
 #define TRIVIALPLUGIN_H
 
-#include <definitions.h>
+#include "definitions.h"
 
 #include <definitions/resources.h>
 #include <interfaces/ipluginmanager.h>
