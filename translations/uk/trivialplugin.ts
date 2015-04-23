@@ -1,23 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" sourcelanguage="en">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="uk" sourcelanguage="en" version="2.0">
 <context>
     <name>TrivialPlugin</name>
     <message>
         <source>Trivial Plugin</source>
-        <translation type="unfinished"></translation>
+        <translation>Тривіальний плагін</translation>
     </message>
     <message>
         <source>Example of Vacuum-IM extension plugin</source>
-        <translation type="unfinished"></translation>
+        <translation>Приклад окремого плагіну для Vacuum-IM</translation>
     </message>
     <message>
         <source>Trivial Message</source>
-        <translation type="unfinished"></translation>
+        <translation>Тривіальне повідомлення</translation>
     </message>
     <message>
         <source>Use a Vacuum-IM every day, and your hair will be soft and silky!</source>
-        <translation type="unfinished"></translation>
+        <translation>Використовуйте Vacuum-IM кожного дня, і ваші волоси будуть м&apos;якими і шовковистими.</translation>
     </message>
 </context>
 </TS>
