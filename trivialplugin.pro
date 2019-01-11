@@ -3,7 +3,7 @@ include(qmake/config.inc)
 
 #Project configuration
 TARGET              = trivialplugin
-QT                  = core gui
+QT                  = core gui widgets
 include(trivialplugin.pri)
 
 #Default progect configuration

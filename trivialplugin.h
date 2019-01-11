@@ -17,6 +17,7 @@ class TrivialPlugin :
 {
 	Q_OBJECT;
 	Q_INTERFACES(IPlugin);
+	Q_PLUGIN_METADATA(IID "org.vacuum-im.plugins.TrivialPlugin");
 public:
 	TrivialPlugin();
 	~TrivialPlugin();

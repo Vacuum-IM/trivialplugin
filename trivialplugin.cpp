@@ -59,5 +59,3 @@ void TrivialPlugin::onMessageActionTriggered(bool)
 {
 	QMessageBox::information(NULL,tr("Trivial Plugin"),tr("Use a Vacuum-IM every day, and your hair will be soft and silky!"));
 }
-
-Q_EXPORT_PLUGIN2(plg_trivialplugin, TrivialPlugin)
